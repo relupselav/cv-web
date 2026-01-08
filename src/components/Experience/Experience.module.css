@@ -1,0 +1,58 @@
+
+
+.container {
+  position: relative;
+}
+
+.title {
+  font-size: clamp(2.2rem, 4vw, 3rem);
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding-left: 1rem;
+  border-left: 1px solid #7d60c9;
+  margin-bottom: 4rem;
+}
+
+.item {
+  background: rgba(255,255,255,0.03);
+  padding: 2rem;
+}
+
+.date {
+  font-size: 1rem;
+  letter-spacing: 0.5px;
+  margin-bottom: 0.5rem;
+  color: #b69aff;
+}
+
+.role {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #c8afff;
+}
+
+/* right contour line */
+.rightLines {
+  position: absolute;
+  right: 0;
+  top: 80%;
+  width: 30%;
+  pointer-events: none;
+  opacity: 0.5;
+}
+
+/* arrows row bottom right */
+.arrows {
+  position: absolute;
+  bottom: -1.5rem;
+  right: 0;
+  width: 160px;
+  opacity: 0.7;
+  pointer-events: none;
+}

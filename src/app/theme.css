@@ -1,0 +1,31 @@
+:root {
+  /* Colors */
+  --bg: #0b0b12;
+  --surface: #14141f;
+  --surface-light: #1c1c29;
+  --border: #5d4bb8;
+  --accent: #9d7df2;
+
+  --text-primary: #7B7BC2;
+  --text-secondary: #AD83B9;
+  --white: #ffffff;
+
+
+    --color-navbar-text: #fff;
+  --color-navbar-hover-bg: #7B7BC2;
+
+  /* Typography */
+  --font-main: "Space Grotesk", sans-serif;
+
+  /* Spacing */
+  --space-xs: 4px;
+  --space-sm: 8px;
+  --space-md: 16px;
+  --space-lg: 24px;
+  --space-xl: 32px;
+
+  /* Radius */
+  --radius-sm: 6px;
+  --radius-md: 12px;
+  --radius-lg: 20px;
+}

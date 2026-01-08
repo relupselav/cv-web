@@ -1,42 +1,55 @@
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+@import "./theme.css";
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
-html,
-body {
-  max-width: 100vw;
-  overflow-x: hidden;
-}
-
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
+/* Reset básico y caja estable */
 * {
-  box-sizing: border-box;
-  padding: 0;
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
+/* Layout base */
+html, body {
+  font-family: var(--font-unbounded), sans-serif;
+  background: var(--bg);
+  color: var(--text-primary);
+  -webkit-font-smoothing: antialiased;
+  min-height: 100vh;
+}
+
+/* Enlaces */
 a {
   color: inherit;
   text-decoration: none;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
+/* Contenedores de ancho */
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-left: var(--space-lg);
+  padding-right: var(--space-lg);
+}
+
+/* Titulares (opcional, puedes bajarlo a componentes si prefieres) */
+h1 {
+  font-size: 3.2rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+h2 {
+  font-size: 2.4rem;
+  font-weight: 600;
+}
+
+h3 {
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+
+/* Pequeño helper */
+.flex {
+  display: flex;
+  align-items: center;
 }
